@@ -4,6 +4,7 @@
   "author": "Elaine Manoelle",
   "license": "MIT",
   "homepage": "https://github.com/elainemanoelle/front-farmers-search",
+  "description": "Application that searches farmers in a API NodeJS according to the parameter passed in the request, wich can be a name or document. If the search has more than one result, return any result that match’s. Once the farmer is selected, the farmer’s details should be populated in the correct inputs.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
