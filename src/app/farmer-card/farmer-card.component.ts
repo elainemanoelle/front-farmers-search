@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { FarmerService } from '../service/farmer.service';
 import { FormBuilder, FormControl, FormGroup, FormControlName } from '@angular/forms';
@@ -9,6 +9,7 @@ import { FormBuilder, FormControl, FormGroup, FormControlName } from '@angular/f
   styleUrls: ['./farmer-card.component.css']
 })
 export class FarmerCardComponent implements OnInit {
+  @Input() labelName: string;
   name = new FormControl();
   document = new FormControl();
   address = new FormControl();
@@ -22,9 +23,12 @@ export class FarmerCardComponent implements OnInit {
   }
 
   mySelectedFarmer(value) {
+    const fullAddress = value.address.street
+    ? `${value.address.street} - ${value.address.city} - ${value.address.state} - ${value.address.country}` : '';
+
+    this.address.setValue(fullAddress);
+    this.document.setValue(value.document.documentNumber);
     this.name.setValue(value.name);
-    this.document.setValue(value.document_number);
-    this.address.setValue(value.street);
   }
 
 }

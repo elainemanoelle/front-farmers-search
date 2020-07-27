@@ -20,7 +20,6 @@ export class FarmerSearchCardComponent implements OnInit {
   @ViewChild(MatAutocompleteTrigger) autocomplete: MatAutocompleteTrigger;
   @Input() farmerSearchAbstractProvider: FarmerSearchAbstractProvider;
   @Output() onFarmerSelectedEvent: EventEmitter<any> = new EventEmitter();
-  @Output() searchReset: EventEmitter<any> = new EventEmitter();
   searchParam = new FormControl();
   options = [];
 
@@ -49,7 +48,22 @@ export class FarmerSearchCardComponent implements OnInit {
   clear() {
     if ( this.searchParam.value ) {
       this.searchParam.setValue(null);
-      this.searchReset.next();
+      const data = {
+        id: null,
+        name: '',
+        document: {
+          documentNumber: '',
+          documentType: '',
+        },
+        address: {
+          street: '',
+          state: '',
+          city: '',
+          country: ''
+        }
+      };
+
+      this.onFarmerSelectedEvent.next(data);
     }
   }
 

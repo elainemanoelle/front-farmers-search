@@ -14,8 +14,8 @@
           </div>
           <div class="col-7">
             <mat-form-field class="w-100">
-              <mat-label>Destinatário</mat-label>
-              <input matInput [formControl]="name" placeholder="Placeholder">
+              <mat-label>{{labelName}}</mat-label>
+              <input matInput [formControl]="name">
             </mat-form-field>
           </div>
         </div>
@@ -23,13 +23,13 @@
           <div class="col-4">
             <mat-form-field class="w-100">
               <mat-label>Doc #</mat-label>
-              <input matInput [formControl]="document" placeholder="Placeholder">
+              <input matInput [formControl]="document" mask="000.000.000-00">
             </mat-form-field>
           </div>
           <div class="col-8">
             <mat-form-field class="w-100">
               <mat-label>Endereço</mat-label>
-              <input matInput [formControl]="address" placeholder="Placeholder">
+              <input matInput [formControl]="address">
             </mat-form-field>
           </div>
         </div>

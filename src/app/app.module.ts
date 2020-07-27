@@ -17,7 +17,8 @@ import {
 } from '@angular/material';
 import { FarmerSearchCardComponent } from './farmer-search-card/farmer-search-card.component';
 import { FarmerCardComponent } from './farmer-card/farmer-card.component';
-
+import { NgxMaskModule, IConfig } from 'ngx-mask';
+export let options: Partial<IConfig> | (() => Partial<IConfig>);
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FarmerCardComponent } from './farmer-card/farmer-card.component';
     MatSliderModule,
     HttpClientModule,
     MatFormFieldModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    NgxMaskModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

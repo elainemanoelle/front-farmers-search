@@ -9,7 +9,7 @@
   </button>
   <mat-autocomplete #auto="matAutocomplete">
     <mat-option *ngFor="let option of options" [value]="option.familia" (click)="clickOption(option)">
-      {{option.name}}, <strong>{{option.document_number}}</strong>
+      {{option.name}}, <strong>{{option.document.documentNumber}}</strong>
     </mat-option>
   </mat-autocomplete>
 </mat-form-field>
