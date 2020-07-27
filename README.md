@@ -19,6 +19,6 @@ Run `npm install` to install all dependencies.
 
 Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`.
 
-## Further help
+## For further information
 
 Email: elaine.m.a.silva@accenture.com | Social Network: www.linkedin.com/in/elainemanoelle.
