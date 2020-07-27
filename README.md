@@ -4,7 +4,7 @@ This project was developed Angular 7.3.8.
 
 ## Install
 
-Run `npm run isntall` to install all dependencies.
+Run `npm install` to install all dependencies.
 
 ## Development server
 
