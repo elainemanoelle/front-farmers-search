@@ -1,0 +1,40 @@
+<div class="content d-flex">
+  <div class="title">
+    <h1>Elaine's Test For Bayer</h1>
+  </div>
+  <mat-card class="card-farmer">
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <div class="col-5">
+            <app-farmer-search-card
+              (onFarmerSelectedEvent)="mySelectedFarmer($event)"
+              [farmerSearchAbstractProvider]="myFarmerSearchProvider">
+            </app-farmer-search-card>
+          </div>
+          <div class="col-7">
+            <mat-form-field class="w-100">
+              <mat-label>Destinatário</mat-label>
+              <input matInput [formControl]="name" placeholder="Placeholder">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <mat-form-field class="w-100">
+              <mat-label>Doc #</mat-label>
+              <input matInput [formControl]="document" placeholder="Placeholder">
+            </mat-form-field>
+          </div>
+          <div class="col-8">
+            <mat-form-field class="w-100">
+              <mat-label>Endereço</mat-label>
+              <input matInput [formControl]="address" placeholder="Placeholder">
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-card>
+
+</div>

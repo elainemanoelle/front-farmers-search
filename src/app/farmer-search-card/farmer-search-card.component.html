@@ -1,0 +1,15 @@
+<mat-form-field class="w-100">
+  <input type="text" [matAutocomplete]="auto" placeholder="Nome or Doc #" aria-label="Number" (input)="searchSugestions()"
+    matInput [formControl]="searchParam" (click)="autocomplete.closePanel()">
+
+  <button (click)="clear()" mat-button matSuffix mat-icon-button class="d-flex justify-content-center align-items-center"
+    aria-label="Busca">
+    <i *ngIf="searchParam.value" class="material-icons md-18">close</i>
+    <i *ngIf="!searchParam.value" class="material-icons md-18">search</i>
+  </button>
+  <mat-autocomplete #auto="matAutocomplete">
+    <mat-option *ngFor="let option of options" [value]="option.familia" (click)="clickOption(option)">
+      {{option.name}}, <strong>{{option.document_number}}</strong>
+    </mat-option>
+  </mat-autocomplete>
+</mat-form-field>

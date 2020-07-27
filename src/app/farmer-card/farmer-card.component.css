@@ -1,0 +1,21 @@
+.content {
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.title {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title > h1 {
+  font-size: 4rem;
+}
+
+.card-farmer {
+  width: 700px;
+}

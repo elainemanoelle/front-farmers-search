@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html, body {
+  height: 100%;
+}
+body {
+   margin: 0;
+   font-family: 'Lobster', cursive;
+   background-color: #000;
+}
+
