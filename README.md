@@ -16,5 +16,4 @@ Application that searches farmers in a API NodeJS according to the parameter pas
 
 ## Further help
 
-Email: elaine.m.a.silva@accenture.com
-Social Network: linkedin.com/in/elainemanoelle.
+Email: elaine.m.a.silva@accenture.com | Social Network: linkedin.com/in/elainemanoelle.
