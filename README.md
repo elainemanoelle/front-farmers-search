@@ -16,4 +16,4 @@ Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Further help
 
-Email: elaine.m.a.silva@accenture.com | Social Network: linkedin.com/in/elainemanoelle.
+Email: elaine.m.a.silva@accenture.com | Social Network: www.linkedin.com/in/elainemanoelle.
