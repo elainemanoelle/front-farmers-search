@@ -1,6 +1,6 @@
 # Farmers Search Frontend
 
-This project was developed with Angular 7.3.8.
+This project was developed using Angular 7.3.8.
 
 ## Description
 
