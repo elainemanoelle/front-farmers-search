@@ -19,6 +19,10 @@ Run `npm install` to install all dependencies.
 
 Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`.
 
+## Unit Tests
+
+Run `npm run test` to run the unit tests.
+
 ## For further information
 
 * Email: elaine.m.a.silva@accenture.com or elaine.manoelle@pmipe.org.br
