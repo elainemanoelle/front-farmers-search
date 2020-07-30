@@ -6,7 +6,7 @@ import {
   Output,
   Input,
 } from '@angular/core';
-import { MatAutocompleteTrigger } from '@angular/material';
+import { MatAutocompleteTrigger, DateAdapter } from '@angular/material';
 import { FormBuilder, FormControl, FormGroup, FormControlName } from '@angular/forms';
 
 import { FarmerSearchAbstractProvider } from '../provider/farmer-search-abstract-provider';
@@ -36,7 +36,26 @@ export class FarmerSearchCardComponent implements OnInit {
       }).catch((e) => {
         console.log('ERROR: ', e);
         this.options = [];
+
+        const data = {
+          id: null,
+          document: {
+            documentNumber: '',
+            documentType: '',
+          },
+          address: {
+            street: '',
+            state: '',
+            city: '',
+            country: ''
+          }
+        };
+
+        this.onFarmerSelectedEvent.next(data);
+        return false;
       });
+
+      return true;
     }
   }
 
@@ -48,6 +67,7 @@ export class FarmerSearchCardComponent implements OnInit {
   clear() {
     if ( this.searchParam.value ) {
       this.searchParam.setValue(null);
+
       const data = {
         id: null,
         name: '',

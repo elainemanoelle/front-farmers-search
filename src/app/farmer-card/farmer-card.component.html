@@ -1,6 +1,6 @@
 <div class="content d-flex">
   <div class="title">
-    <h1>Elaine's Test For Bayer</h1>
+    <h1 class="title-page">Elaine's Test For Bayer</h1>
   </div>
   <mat-card class="card-farmer">
     <div class="row">
@@ -14,8 +14,8 @@
           </div>
           <div class="col-7">
             <mat-form-field class="w-100">
-              <mat-label>{{labelName}}</mat-label>
-              <input matInput [formControl]="name">
+              <mat-label class="label-name">{{labelName}}</mat-label>
+              <input matInput [formControl]="name" id="labelname">
             </mat-form-field>
           </div>
         </div>

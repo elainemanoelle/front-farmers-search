@@ -8,7 +8,7 @@
     <i *ngIf="!searchParam.value" class="material-icons md-18">search</i>
   </button>
   <mat-autocomplete #auto="matAutocomplete">
-    <mat-option *ngFor="let option of options" [value]="option.familia" (click)="clickOption(option)">
+    <mat-option *ngFor="let option of options" [value]="option.document.documentNumber" (click)="clickOption(option)">
       {{option.name}}, <strong>{{option.document.documentNumber}}</strong>
     </mat-option>
   </mat-autocomplete>
